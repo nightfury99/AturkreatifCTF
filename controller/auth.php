@@ -2,7 +2,7 @@
 session_start();
 
 if(isset($_SESSION["login"]) || $_SESSION["login"] == "true") {
-    header("location: ../index.php");
+    header("location: ../dashboard.php");
     exit;
 }
 
@@ -22,7 +22,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION["name"] = $row["name"];
         $_SESSION["login"] = "true";
 
-        header("location: ../index.php");
+        header("location: ../dashboard.php");
         exit;
     }else {
         header("location: ../login.php");
