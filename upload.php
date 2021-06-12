@@ -270,7 +270,7 @@ function xss_clean($data) {
                                     </div>
                                     <div>
                                         <div class="small text-gray-500">June 11, 2021</div>
-                                        $290.29 has been deposited into your account!
+                                        RM290.29 has been deposited into your account!
                                     </div>
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">

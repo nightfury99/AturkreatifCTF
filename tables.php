@@ -213,7 +213,7 @@ require_once("594c103f2c6e04c3d8ab059f031e0c1a/session.php");
                                     </div>
                                     <div>
                                         <div class="small text-gray-500">June 11, 2021</div>
-                                        $290.29 has been deposited into your account!
+                                        RM290.29 has been deposited into your account!
                                     </div>
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
