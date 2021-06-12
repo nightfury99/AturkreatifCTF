@@ -1,3 +1,7 @@
+<?php
+require_once("594c103f2c6e04c3d8ab059f031e0c1a/session.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -140,7 +144,7 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Login Screens:</h6>
-                        <a class="collapse-item" href="login.html">Login</a>
+                        <a class="collapse-item" href="login.php">Login</a>
                         <a class="collapse-item" href="register.html">Register</a>
                         <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
                         <div class="collapse-divider"></div>
@@ -439,7 +443,7 @@
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
+                    <a class="btn btn-primary" href="594c103f2c6e04c3d8ab059f031e0c1a/logout.php">Logout</a>
                 </div>
             </div>
         </div>

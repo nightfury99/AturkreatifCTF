@@ -1,11 +1,6 @@
 <?php
 session_start();
 
-if(isset($_SESSION["login"]) || $_SESSION["login"] == "true") {
-    header("location: ../dashboard.php");
-    exit;
-}
-
 require_once("../config.php");
 
 if($_SERVER["REQUEST_METHOD"] == "POST") {
