@@ -1,5 +1,6 @@
 <?php
 require_once("594c103f2c6e04c3d8ab059f031e0c1a/session.php");
+require_once("config.php");
 ?>
 
 <!DOCTYPE html>
@@ -49,7 +50,7 @@ require_once("594c103f2c6e04c3d8ab059f031e0c1a/session.php");
             <li class="nav-item active">
                 <a class="nav-link" href="dashboard.php">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
+		    <span>Dashboard</span></a>
             </li>
 
             <!-- Divider -->
@@ -352,8 +353,18 @@ require_once("594c103f2c6e04c3d8ab059f031e0c1a/session.php");
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
+		    <div class="alert alert-info" role="alert">
+		<?php
+		    $query = "SELECT * FROM `07127253d6e26d150c633eb7aa38f6b8`";
+		    $result = mysqli_query($connn, $query);
 
+		    if(mysqli_num_rows($result) > 0) {
+			$row = mysqli_fetch_assoc($result);
+			echo $row["flag_2"];
+		    }
+		?>
                     <!-- Page Heading -->
+            	    </div>
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
                         <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
