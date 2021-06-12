@@ -42,7 +42,7 @@
                                         <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
                                     </div>
                                     
-                                    <form class="user" action="controller/auth.php" method="POST">
+                                    <form class="user" action="594c103f2c6e04c3d8ab059f031e0c1a/auth.php" method="POST">
                                         <div class="form-group">
                                             <input type="email" name="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address...">
                                         </div>
