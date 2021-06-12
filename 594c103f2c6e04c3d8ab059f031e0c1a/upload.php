@@ -11,20 +11,20 @@ if(isset($_POST["submit"])) {
         preg_match("/\b(\.php|\.php2|\.php3|\.php4|\.php5|\.php6|\.phps|\.pht|\.phtm|\.pgif)\b/", strtolower($_FILES["fileToUpload"]["name"]), $output_array);
 
         if(!empty($output_array)) {
-            header("location: ../upload.php?msg=No php");
+            header("location: ../upload.php?msg=Error - No php file!");
             die();
         }
 
 	if(file_exists($target_file)) {
-	    header("location: ../upload.php?msg=Filename already exists");
+	    header("location: ../upload.php?msg=Error - Filename already exists!");
 	    die();
 	}
         
         if(!move_uploaded_file($_FILES['fileToUpload']['tmp_name'], $target_file)) {
-            header("location: ../upload.php?msg=Error During Uploading");
+            header("location: ../upload.php?msg=Error - Error During Uploading!");
             die();
         }else {
-	    header("location: ../upload.php?msg=Success Upload!");
+	    header("location: ../upload.php?msg=Success - Success Upload!");
 	}
 
     }else {

@@ -20,7 +20,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         header("location: ../dashboard.php");
         exit;
     }else {
-        header("location: ../login.php");
+        header("location: ../login.php?msg=Error - Invalid Username or Password!");
         exit;
     }
 }
